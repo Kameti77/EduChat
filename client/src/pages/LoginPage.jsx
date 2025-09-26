@@ -15,10 +15,6 @@ const LoginPage = () => {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    // if (currentSate === "Sign up" && !isDataSubmitted) {
-    //   setIsDataSubmitted(true)
-    //   return;
-    // }
 
     if (currentSate === "Sign up") {
       if (!fullName.trim()) { toast.error("Full name is required"); return; }

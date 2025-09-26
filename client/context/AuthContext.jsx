@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
         }
     }
 
-    // loggin function to handle user authentication and socker authentication
+    // login function to handle user authentication and socker authentication
     const login = async (state, credentials) =>{
         try {
             const { data } = await axios.post(`/api/auth/${state}`, credentials);
