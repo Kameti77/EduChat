@@ -2,6 +2,9 @@ import avatar_icon from './avatar_icon.png'
 import gallery_icon from './gallery_icon.svg'
 import help_icon from './help_icon.png'
 import logo from './eduChatLogo.svg'
+import logo_big from './logo_big.svg'
+import logo_icon from './logo_icon.svg'
+
 // import profile_richard from './profile_richard.png'
 // import profile_alison from './profile_alison.png'
 // import profile_enrique from './profile_enrique.png'
@@ -25,6 +28,8 @@ const assets = {
     gallery_icon,
     help_icon,
     logo,
+    logo_big,
+    logo_icon,
     search_icon,
     send_button,
     menu_icon,
