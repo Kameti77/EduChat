@@ -18,9 +18,11 @@ export const getUserForSidebar = async (req, res) => {
             if (messages.length > 0) {
                 unseenMessages[user._id] = messages.length;
             }
-            res.json({ success: true, users: filteredUsers, unseenMessages })
+            
         })
         await Promise.all(promises);
+
+        res.json({ success: true, users: filteredUsers, unseenMessages })
     } catch (error) {
         console.log(error.message);
         res.json({ success: false, message: error.message })
@@ -65,7 +67,7 @@ export const markMessageAsSeen = async (req, res) => {
 export const sendMessage = async (req, res) => {
     try {
         const { text, image } = req.body;
-        const receivedId = req.params.id;
+        const receiverId = req.params.id;
         const senderId = req.user._id;
 
         let imageUrl;
